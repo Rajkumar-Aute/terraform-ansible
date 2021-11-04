@@ -14,10 +14,3 @@ sudo apt install ansible -y
 
 echo "========== Ansible Installation =========="
 ansible --version
-
-
-
-#useradd devops # creating user devops and password is devops, can be updated in the script.
-#echo $user:devops | chpasswd  # it will set password as "devops" for user, password can be updated in thee script.
-#echo '$user ALL=(ALL:ALL) ALL' | sudo EDITOR='tee -a' visudo
-

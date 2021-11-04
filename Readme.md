@@ -4,7 +4,8 @@ and create terraform ssh key in the AWS console.
 
 * create new folder and clone the repository to local folder and run the terraform script,
 ```
-git clone https://github.com/RajkumarAute/terraform-ansible.git .
+git clone https://github.com/RajkumarAute/terraform-ansible.git
+cd terraform-ansible
 terraform init
 terraform apply
 ```
@@ -21,11 +22,10 @@ login into Master node
 * * update the line 
 * * devops ALL=(ALL) NOPASSWD: ALL
 * then create ssh key
-  ``` ssh-keygen ```
+``` ssh-keygen ```
   press enter for all options
 * copy the ssh key to each of the nodes
 ``` ssh-copy-id devops@<ipaddress-of-node> ```
 * to test the connection
 ``` ssh <ipaddress-of-node> ```
 * * it should login without password
-
