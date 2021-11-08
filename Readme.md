@@ -20,7 +20,7 @@ login into Master node
 * add sudo permission with no password
 ``` sudo visudo ```
 * * update the line 
-* * devops ALL=(ALL) NOPASSWD: ALL
+* * devops ALL=(ALL:ALL) NOPASSWD:ALL
 * then create ssh key
 ``` ssh-keygen ```
   press enter for all options
