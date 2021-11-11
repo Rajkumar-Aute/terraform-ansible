@@ -12,20 +12,20 @@ terraform apply
 * revise the creation statement then approve for apply process.
 
 ### after build
-login into Master node
+login into Master node and create user, (note - do not use default ubuntu user)
 * create user "devops"
-``` sudo useradd devops ```
+``` sudo adduser devops ```
 * set password to the user
 ``` sudo passwd devops ```
 * add sudo permission with no password
 ``` sudo visudo ```
-* * update the line 
+* * update the below line in visudo file 
 * * devops ALL=(ALL:ALL) NOPASSWD:ALL
 * then create ssh key
 ``` ssh-keygen ```
   press enter for all options
 * copy the ssh key to each of the nodes
-``` ssh-copy-id devops@<ipaddress-of-node> ```
+``` ssh-copy-id devops@<ip-address-of-node> ```
 * to test the connection
-``` ssh <ipaddress-of-node> ```
+``` ssh <ip-address-of-node> ```
 * * it should login without password
